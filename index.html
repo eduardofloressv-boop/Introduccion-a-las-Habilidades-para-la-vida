@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué aprenderemos? - Habilidades para la Vida</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --conexion-purple: #8D3F97;
+            --conexion-teal: #00A7CF;
+            --conexion-orange: #F49221;
+            --conexion-blue: #0056b3;
+            --conexion-dark: #1E293B;
+        }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--conexion-orange); 
+            color: white; 
+        }
+        .skill-card {
+            background: white;
+            color: var(--conexion-dark);
+            border-radius: 2rem;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+            border: 2px solid transparent;
+        }
+        .skill-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+            border-color: var(--conexion-blue);
+        }
+        .drawing-box {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120px;
+            background: #f8fafc;
+            border-radius: 1.5rem;
+            border: 1px solid #e2e8f0;
+        }
+        .example-tag {
+            background-color: #f1f5f9;
+            border-left: 4px solid var(--conexion-purple);
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            margin-top: 1rem;
+        }
+        .bg-blue-accent {
+            background-color: var(--conexion-blue);
+        }
+        .bg-purple-accent {
+            background-color: var(--conexion-purple);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Membrete con Logo -->
+    <div class="w-full bg-white border-b-4 border-blue-accent shadow-md">
+        <img src="membrete conecion.png" alt="Conexión y Ticongle Academy" class="w-full h-auto max-w-4xl mx-auto py-3" onerror="this.style.display='none'; document.getElementById('alt-header').style.display='block';">
+        <div id="alt-header" class="hidden bg-white text-slate-800 p-4 text-center">
+            <h1 class="text-xl font-bold tracking-widest uppercase">CONEXIÓN | TICONGLE ACADEMY</h1>
+        </div>
+    </div>
+
+    <main class="max-w-6xl mx-auto px-4 py-16 space-y-20">
+
+        <!-- Título Principal -->
+        <section class="text-center space-y-6">
+            <!-- Cambio solicitado: Módulo de Formación Humana -> Habilidades para la vida -->
+            <div class="inline-block bg-purple-accent text-white px-6 py-2 rounded-full font-black text-sm uppercase tracking-widest shadow-xl border-2 border-white">
+                Habilidades para la vida
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tighter drop-shadow-lg">
+                ¿Qué aprenderemos?
+            </h1>
+            <p class="text-xl md:text-2xl text-white font-medium max-w-3xl mx-auto leading-relaxed bg-blue-accent/30 p-6 rounded-3xl backdrop-blur-sm border-2 border-white/20">
+                No solo aprenderemos a usar computadoras. Aprenderemos las herramientas que te servirán para toda la vida, para conseguir trabajo y ser un mejor líder.
+            </p>
+        </section>
+
+        <!-- Rejilla de Habilidades -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Habilidad 1 -->
+            <div class="skill-card border-t-8 border-purple-accent">
+                <div class="drawing-box bg-purple-50">🗣️</div>
+                <h3 class="text-2xl font-bold mb-2 text-purple-800">Comunicación Asertiva</h3>
+                <p class="text-sm text-slate-600">Aprender a decir lo que piensas y sientes de forma clara y sin faltar al respeto.</p>
+                <div class="example-tag">
+                    <strong class="text-purple-700">Ejemplo:</strong> Explicarle a tu jefe por qué llegaste tarde sin poner excusas y proponiendo una solución.
+                </div>
+            </div>
+
+            <!-- Habilidad 2 -->
+            <div class="skill-card border-t-8 border-blue-accent">
+                <div class="drawing-box bg-blue-50">⚖️</div>
+                <h3 class="text-2xl font-bold mb-2 text-blue-800">Toma de Decisiones</h3>
+                <p class="text-sm text-slate-600">Saber elegir el mejor camino para tu futuro analizando los riesgos y beneficios.</p>
+                <div class="example-tag" style="border-left-color: var(--conexion-blue);">
+                    <strong class="text-blue-700">Ejemplo:</strong> Decidir inscribirte en este curso hoy para mejorar tus ingresos en unos meses.
+                </div>
+            </div>
+
+            <!-- Habilidad 3 -->
+            <div class="skill-card border-t-8 border-purple-accent">
+                <div class="drawing-box bg-purple-50">🤝</div>
+                <h3 class="text-2xl font-bold mb-2 text-purple-800">Trabajo en Equipo</h3>
+                <p class="text-sm text-slate-600">Colaborar con otros para lograr metas más grandes. Nadie llega solo a la cima.</p>
+                <div class="example-tag">
+                    <strong class="text-purple-700">Ejemplo:</strong> Ayudar a un compañero que no entiende una tarea de Excel para que todos avancen.
+                </div>
+            </div>
+
+            <!-- Habilidad 4 -->
+            <div class="skill-card border-t-8 border-blue-accent">
+                <div class="drawing-box bg-blue-50">🧠</div>
+                <h3 class="text-2xl font-bold mb-2 text-blue-800">Inteligencia Emocional</h3>
+                <p class="text-sm text-slate-600">Controlar tus reacciones cuando estás enojado o bajo mucha presión.</p>
+                <div class="example-tag" style="border-left-color: var(--conexion-blue);">
+                    <strong class="text-blue-700">Ejemplo:</strong> Respirar profundo ante un cliente difícil en lugar de responder de mala manera.
+                </div>
+            </div>
+
+            <!-- Habilidad 5 -->
+            <div class="skill-card border-t-8 border-purple-accent">
+                <div class="drawing-box bg-purple-50">🕵️</div>
+                <h3 class="text-2xl font-bold mb-2 text-purple-800">Autoconocimiento</h3>
+                <p class="text-sm text-slate-600">Descubrir para qué eres bueno (FODA) y en qué cosas necesitas ayuda para mejorar.</p>
+                <div class="example-tag">
+                    <strong class="text-purple-700">Ejemplo:</strong> Identificar que eres muy bueno con las manos y buscar un taller que use ese talento.
+                </div>
+            </div>
+
+            <!-- Habilidad 6 -->
+            <div class="skill-card border-t-8 border-blue-accent">
+                <div class="drawing-box bg-blue-50">🎯</div>
+                <h3 class="text-2xl font-bold mb-2 text-blue-800">Empatía</h3>
+                <p class="text-sm text-slate-600">Ponerse en el lugar de los demás para entender su situación y ayudar mejor.</p>
+                <div class="example-tag" style="border-left-color: var(--conexion-blue);">
+                    <strong class="text-blue-700">Ejemplo:</strong> Escuchar a un amigo que está pasando un mal momento sin juzgarlo.
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Mensaje de Cierre -->
+        <section class="text-center py-10 bg-white/10 rounded-[3rem] border-2 border-white/20 backdrop-blur-md">
+            <h2 class="text-4xl md:text-6xl font-black text-white mb-6 italic uppercase tracking-tighter drop-shadow-lg">
+                ¡Te deseamos el mejor de los éxitos!
+            </h2>
+            <div class="w-32 h-2 bg-purple-accent mx-auto rounded-full mb-12 shadow-md"></div>
+            
+            <p class="text-xl font-medium mb-12 text-white px-4 max-w-2xl mx-auto italic">
+                "Febrero es el mes para fortalecer no solo tu mente, sino también tu corazón."
+            </p>
+
+            <!-- Footer con branding -->
+            <div class="flex justify-center">
+                <div class="flex gap-8 items-center bg-white p-6 rounded-2xl shadow-2xl border-2 border-blue-accent">
+                    <span class="font-black text-2xl text-purple-700 tracking-tighter">CONEXIÓN</span>
+                    <div class="h-8 w-px bg-slate-200"></div>
+                    <span class="font-black text-2xl text-cyan-600 tracking-tighter">TICONGLE ACADEMY</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Visual -->
+    <footer class="text-center pb-8 text-white font-bold opacity-80 text-sm">
+        Curso de Ofimática Productiva - Febrero 2026
+    </footer>
+
+</body>
+</html>
