@@ -3,181 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Qué aprenderemos? - Habilidades para la Vida</title>
+    <title>¿Qué son las Habilidades para la Vida? - Guía Estudiantil</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        :root {
-            --conexion-purple: #8D3F97;
-            --conexion-teal: #00A7CF;
-            --conexion-orange: #F49221;
-            --conexion-blue: #0056b3;
-            --conexion-dark: #1E293B;
+        body { font-family: 'Outfit', sans-serif; background-color: #020617; color: #f8fafc; }
+        .bg-dark-blue { background-color: #0f172a; }
+        .text-orange { color: #f97316; }
+        .text-purple { color: #a855f7; }
+        .border-purple { border-color: #7e22ce; }
+        .border-orange { border-color: #f97316; }
+        
+        .glass-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
-        body { 
-            font-family: 'Inter', sans-serif; 
-            background-color: var(--conexion-orange); 
-            color: white; 
-        }
-        .skill-card {
-            background: white;
-            color: var(--conexion-dark);
-            border-radius: 2rem;
-            padding: 2rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
-            border: 2px solid transparent;
-        }
-        .skill-card:hover {
-            transform: scale(1.02);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
-            border-color: var(--conexion-blue);
-        }
-        .drawing-box {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 120px;
-            background: #f8fafc;
-            border-radius: 1.5rem;
-            border: 1px solid #e2e8f0;
-        }
-        .example-tag {
-            background-color: #f1f5f9;
-            border-left: 4px solid var(--conexion-purple);
-            padding: 0.75rem;
-            border-radius: 0.5rem;
-            font-size: 0.875rem;
-            margin-top: 1rem;
-        }
-        .bg-blue-accent {
-            background-color: var(--conexion-blue);
-        }
-        .bg-purple-accent {
-            background-color: var(--conexion-purple);
+
+        .highlight-box {
+            border-left: 5px solid #f97316;
+            background: linear-gradient(90deg, rgba(249, 115, 22, 0.1) 0%, rgba(2, 6, 23, 0) 100%);
         }
     </style>
 </head>
-<body class="antialiased">
+<body class="p-4 md:p-8">
 
-    <!-- Membrete con Logo -->
-    <div class="w-full bg-white border-b-4 border-blue-accent shadow-md">
-        <img src="membrete conecion.png" alt="Conexión y Ticongle Academy" class="w-full h-auto max-w-4xl mx-auto py-3" onerror="this.style.display='none'; document.getElementById('alt-header').style.display='block';">
-        <div id="alt-header" class="hidden bg-white text-slate-800 p-4 text-center">
-            <h1 class="text-xl font-bold tracking-widest uppercase">CONEXIÓN | TICONGLE ACADEMY</h1>
-        </div>
-    </div>
-
-    <main class="max-w-6xl mx-auto px-4 py-16 space-y-20">
-
-        <!-- Título Principal -->
-        <section class="text-center space-y-6">
-            <!-- Cambio solicitado: Módulo de Formación Humana -> Habilidades para la vida -->
-            <div class="inline-block bg-purple-accent text-white px-6 py-2 rounded-full font-black text-sm uppercase tracking-widest shadow-xl border-2 border-white">
-                Habilidades para la vida
+    <main class="max-w-4xl mx-auto space-y-12">
+        
+        <!-- Encabezado -->
+        <header class="text-center space-y-4">
+            <div class="inline-block px-4 py-1 rounded-full border border-purple text-purple text-xs font-bold uppercase tracking-widest">
+                Asociación Conexión
             </div>
-            <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tighter drop-shadow-lg">
-                ¿Qué aprenderemos?
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tighter">
+                Entendiendo las <span class="text-orange">Habilidades</span> para la Vida
             </h1>
-            <p class="text-xl md:text-2xl text-white font-medium max-w-3xl mx-auto leading-relaxed bg-blue-accent/30 p-6 rounded-3xl backdrop-blur-sm border-2 border-white/20">
-                No solo aprenderemos a usar computadoras. Aprenderemos las herramientas que te servirán para toda la vida, para conseguir trabajo y ser un mejor líder.
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto italic">
+                "No solo se trata de saber cosas, sino de saber vivir y convivir."
             </p>
-        </section>
+        </header>
 
-        <!-- Rejilla de Habilidades -->
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <!-- Habilidad 1 -->
-            <div class="skill-card border-t-8 border-purple-accent">
-                <div class="drawing-box bg-purple-50">🗣️</div>
-                <h3 class="text-2xl font-bold mb-2 text-purple-800">Comunicación Asertiva</h3>
-                <p class="text-sm text-slate-600">Aprender a decir lo que piensas y sientes de forma clara y sin faltar al respeto.</p>
-                <div class="example-tag">
-                    <strong class="text-purple-700">Ejemplo:</strong> Explicarle a tu jefe por qué llegaste tarde sin poner excusas y proponiendo una solución.
-                </div>
-            </div>
-
-            <!-- Habilidad 2 -->
-            <div class="skill-card border-t-8 border-blue-accent">
-                <div class="drawing-box bg-blue-50">⚖️</div>
-                <h3 class="text-2xl font-bold mb-2 text-blue-800">Toma de Decisiones</h3>
-                <p class="text-sm text-slate-600">Saber elegir el mejor camino para tu futuro analizando los riesgos y beneficios.</p>
-                <div class="example-tag" style="border-left-color: var(--conexion-blue);">
-                    <strong class="text-blue-700">Ejemplo:</strong> Decidir inscribirte en este curso hoy para mejorar tus ingresos en unos meses.
-                </div>
-            </div>
-
-            <!-- Habilidad 3 -->
-            <div class="skill-card border-t-8 border-purple-accent">
-                <div class="drawing-box bg-purple-50">🤝</div>
-                <h3 class="text-2xl font-bold mb-2 text-purple-800">Trabajo en Equipo</h3>
-                <p class="text-sm text-slate-600">Colaborar con otros para lograr metas más grandes. Nadie llega solo a la cima.</p>
-                <div class="example-tag">
-                    <strong class="text-purple-700">Ejemplo:</strong> Ayudar a un compañero que no entiende una tarea de Excel para que todos avancen.
-                </div>
-            </div>
-
-            <!-- Habilidad 4 -->
-            <div class="skill-card border-t-8 border-blue-accent">
-                <div class="drawing-box bg-blue-50">🧠</div>
-                <h3 class="text-2xl font-bold mb-2 text-blue-800">Inteligencia Emocional</h3>
-                <p class="text-sm text-slate-600">Controlar tus reacciones cuando estás enojado o bajo mucha presión.</p>
-                <div class="example-tag" style="border-left-color: var(--conexion-blue);">
-                    <strong class="text-blue-700">Ejemplo:</strong> Respirar profundo ante un cliente difícil en lugar de responder de mala manera.
-                </div>
-            </div>
-
-            <!-- Habilidad 5 -->
-            <div class="skill-card border-t-8 border-purple-accent">
-                <div class="drawing-box bg-purple-50">🕵️</div>
-                <h3 class="text-2xl font-bold mb-2 text-purple-800">Autoconocimiento</h3>
-                <p class="text-sm text-slate-600">Descubrir para qué eres bueno (FODA) y en qué cosas necesitas ayuda para mejorar.</p>
-                <div class="example-tag">
-                    <strong class="text-purple-700">Ejemplo:</strong> Identificar que eres muy bueno con las manos y buscar un taller que use ese talento.
-                </div>
-            </div>
-
-            <!-- Habilidad 6 -->
-            <div class="skill-card border-t-8 border-blue-accent">
-                <div class="drawing-box bg-blue-50">🎯</div>
-                <h3 class="text-2xl font-bold mb-2 text-blue-800">Empatía</h3>
-                <p class="text-sm text-slate-600">Ponerse en el lugar de los demás para entender su situación y ayudar mejor.</p>
-                <div class="example-tag" style="border-left-color: var(--conexion-blue);">
-                    <strong class="text-blue-700">Ejemplo:</strong> Escuchar a un amigo que está pasando un mal momento sin juzgarlo.
-                </div>
-            </div>
-
-        </section>
-
-        <!-- Mensaje de Cierre -->
-        <section class="text-center py-10 bg-white/10 rounded-[3rem] border-2 border-white/20 backdrop-blur-md">
-            <h2 class="text-4xl md:text-6xl font-black text-white mb-6 italic uppercase tracking-tighter drop-shadow-lg">
-                ¡Te deseamos el mejor de los éxitos!
+        <!-- Definición Central -->
+        <section class="glass-card p-8 rounded-[2.5rem] shadow-2xl relative overflow-hidden">
+            <div class="absolute -top-10 -right-10 w-40 h-40 bg-purple/10 rounded-full blur-3xl"></div>
+            <h2 class="text-2xl font-bold text-orange mb-6 flex items-center gap-3">
+                <i class="fa-solid fa-lightbulb"></i> ¿Qué son exactamente?
             </h2>
-            <div class="w-32 h-2 bg-purple-accent mx-auto rounded-full mb-12 shadow-md"></div>
-            
-            <p class="text-xl font-medium mb-12 text-white px-4 max-w-2xl mx-auto italic">
-                "Febrero es el mes para fortalecer no solo tu mente, sino también tu corazón."
-            </p>
+            <div class="space-y-4 text-slate-300 text-lg leading-relaxed">
+                <p>
+                    Las <strong>Habilidades para la Vida</strong> son un conjunto de destrezas emocionales, sociales y cognitivas que nos permiten enfrentar de forma positiva los desafíos de la vida diaria.
+                </p>
+                <p class="text-sm opacity-80">
+                    Fueron definidas por la Organización Mundial de la Salud (OMS) en 1993, pero hoy en 2026 son más valiosas que nunca porque son las únicas que la Inteligencia Artificial no puede copiar: <strong>la empatía, la ética y el juicio humano.</strong>
+                </p>
+            </div>
+        </section>
 
-            <!-- Footer con branding -->
-            <div class="flex justify-center">
-                <div class="flex gap-8 items-center bg-white p-6 rounded-2xl shadow-2xl border-2 border-blue-accent">
-                    <span class="font-black text-2xl text-purple-700 tracking-tighter">CONEXIÓN</span>
-                    <div class="h-8 w-px bg-slate-200"></div>
-                    <span class="font-black text-2xl text-cyan-600 tracking-tighter">TICONGLE ACADEMY</span>
+        <!-- ¿Para qué sirven? -->
+        <section class="space-y-8">
+            <h2 class="text-3xl font-black text-center uppercase tracking-widest text-purple">¿Para qué sirven?</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Beneficio 1 -->
+                <div class="highlight-box p-6 rounded-r-2xl">
+                    <h3 class="font-bold text-white text-xl mb-2 italic">1. Éxito Laboral</h3>
+                    <p class="text-slate-400 text-sm">
+                        Ayudan a que los jefes y compañeros confíen en ti. Una persona que sabe comunicarse y resolver problemas es 10 veces más valiosa que alguien que solo tiene un título.
+                    </p>
+                </div>
+                <!-- Beneficio 2 -->
+                <div class="highlight-box p-6 rounded-r-2xl border-purple">
+                    <h3 class="font-bold text-white text-xl mb-2 italic">2. Relaciones Sanas</h3>
+                    <p class="text-slate-400 text-sm">
+                        Te sirven para poner límites, evitar peleas innecesarias con tu familia o pareja, y rodearte de personas que te ayuden a crecer.
+                    </p>
+                </div>
+                <!-- Beneficio 3 -->
+                <div class="highlight-box p-6 rounded-r-2xl border-purple">
+                    <h3 class="font-bold text-white text-xl mb-2 italic">3. Salud Mental</h3>
+                    <p class="text-slate-400 text-sm">
+                        Saber manejar el estrés y tus emociones evita que te sientas "quemado" o ansioso cuando las cosas no salen como esperabas en Sonsonate o San Salvador.
+                    </p>
+                </div>
+                <!-- Beneficio 4 -->
+                <div class="highlight-box p-6 rounded-r-2xl">
+                    <h3 class="font-bold text-white text-xl mb-2 italic">4. Toma de Decisiones</h3>
+                    <p class="text-slate-400 text-sm">
+                        Te dan la claridad para elegir qué camino tomar en tu carrera o vida personal, analizando las consecuencias antes de actuar por impulso.
+                    </p>
                 </div>
             </div>
         </section>
+
+        <!-- Las 3 Áreas de Aplicación -->
+        <section class="glass-card p-10 rounded-[3rem] border-t-4 border-orange">
+            <h2 class="text-2xl font-bold text-white mb-8 text-center uppercase">Las 3 Áreas de Aplicación</h2>
+            <div class="flex flex-col md:flex-row gap-8 justify-around text-center">
+                <div class="space-y-3">
+                    <div class="text-5xl text-purple"><i class="fa-solid fa-brain"></i></div>
+                    <h4 class="font-black text-sm uppercase">Cognitivas</h4>
+                    <p class="text-[11px] text-slate-500 uppercase tracking-widest italic">Pensar bien para decidir mejor</p>
+                </div>
+                <div class="space-y-3">
+                    <div class="text-5xl text-orange"><i class="fa-solid fa-users"></i></div>
+                    <h4 class="font-black text-sm uppercase">Sociales</h4>
+                    <p class="text-[11px] text-slate-500 uppercase tracking-widest italic">Conectar bien para trabajar mejor</p>
+                </div>
+                <div class="space-y-3">
+                    <div class="text-5xl text-blue-400"><i class="fa-solid fa-heart"></i></div>
+                    <h4 class="font-black text-sm uppercase">Emocionales</h4>
+                    <p class="text-[11px] text-slate-500 uppercase tracking-widest italic">Sentir bien para vivir mejor</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mensaje del Facilitador -->
+        <footer class="text-center pt-10 border-t border-white/10 space-y-4">
+            <p class="text-slate-500 italic text-sm">
+                "Recuerden, estimados participantes: El éxito no se mide solo por lo que logramos, sino por la calidad de las personas en las que nos convertimos mientras lo alcanzamos."
+            </p>
+            <div class="flex flex-col items-center">
+                <p class="font-bold text-purple">Psic. Eduardo Flores</p>
+                <p class="text-[10px] text-slate-600 uppercase tracking-[0.5em]">Facilitador de Habilidades Transversales</p>
+            </div>
+        </footer>
 
     </main>
-
-    <!-- Footer Visual -->
-    <footer class="text-center pb-8 text-white font-bold opacity-80 text-sm">
-        Curso de Ofimática Productiva - Febrero 2026
-    </footer>
 
 </body>
 </html>
